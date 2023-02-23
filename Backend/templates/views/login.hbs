@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+    {{>header}}
+</head>
+<body>
+	<form method="post">
+		<h1>Login here</h1>
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" required placeholder="Enter email...">
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required placeholder="Enter Password">
+		<input type="submit" value="Login">
+        <h3>Don't have an account <a href="/register">Register here</a></h3>
+	</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+    {{>header}}
+</head>
+<body>
+    {{>navbar}}
+	<form action="/register" method="post">
+		<h1>Register here</h1>
+		<label for="firstname">First Name</label>
+		<input type="text" id="firstname" name="firstname" required placeholder="Enter First Name...">
+		<label for="lastname">Last Name</label>
+		<input type="text" id="lastname" name="lastname" required placeholder="Enter Last Name...">
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" required placeholder="Enter email...">
+		<label for="gender">Gender</label>
+		<select id="gender" name="gender">
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required placeholder="Enter Password">
+		<label for="confirmpassword">Confirm Password</label>
+		<input type="password" id="confirmpassword" name="confirmpassword" required placeholder="Confirm Password">
+		<input type="submit" value="Submit">
+        <h3>Already have an account? <a href="/login">login here</a></h3>
+	</form>
+</body>
+</html>
